@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane id="mainTabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Encrypting">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" visible="false">
+<children><RadioButton id="encRadioNo" layoutX="24.8193359375" layoutY="25.399999618530273" mnemonicParsing="false" text="No encrypting" /><RadioButton id="encRadioGamming" layoutX="25.138671875" layoutY="54.39999961853027" mnemonicParsing="false" text="Gamming" /><Label id="encKeyLabel" layoutX="26.0" layoutY="133.0" text="Encrypt key" visible="false" /><Label id="decKeyLabel" layoutX="25.0" layoutY="172.0" text="Decrypt key" visible="false" /><TextField id="encKey" layoutX="114.0" layoutY="126.0" visible="false" /><TextField id="decKey" layoutX="114.0" layoutY="164.0" visible="false" /><Button id="saveEncBtn" layoutX="524.2275390625" layoutY="328.0" mnemonicParsing="false" text="Save" /><RadioButton id="encRadioAES" layoutX="25.0" layoutY="83.0" mnemonicParsing="false" text="AES" />
+</children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

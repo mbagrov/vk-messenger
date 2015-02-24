@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="mainPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><SplitPane id="mainSplit" dividerPositions="0.30092592592592593" focusTraversable="true" layoutX="174.0" layoutY="110.0" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane id="sideBarPane" minHeight="200.0" minWidth="200.0" prefHeight="160.0" prefWidth="100.0">
+<children><Pane id="myProfilePane" layoutX="-2.0" layoutY="-1.0" prefHeight="78.0" prefWidth="206.0">
+<children><ImageView id="profileImage" fx:id="profileImage" fitHeight="68.0" fitWidth="68.0" layoutX="7.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" /><Label id="profileName" fx:id="profileName" layoutX="80.0" layoutY="25.0" prefHeight="15.0" prefWidth="123.0" />
+</children></Pane><ListView id="friendListView" layoutX="1.0" layoutY="296.0" prefHeight="418.0" prefWidth="204.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="78.0" />
+</children></AnchorPane>
+    <AnchorPane minHeight="200.0" minWidth="400.0" prefHeight="160.0" prefWidth="100.0">
+<children><SplitPane id="contentSplit" dividerPositions="0.679372197309417" focusTraversable="true" layoutX="139.5" layoutY="95.0" orientation="VERTICAL" prefHeight="448.0" prefWidth="439.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane id="chatPane" minHeight="300.0" minWidth="250.0" prefHeight="100.0" prefWidth="160.0">
+<children><ListView id="chatListView" layoutX="91.0" layoutY="26.0" prefHeight="256.0" prefWidth="482.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="77.0" /><ImageView id="selectedFriendImg" fitHeight="68.0" fitWidth="68.0" layoutX="9.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" /><Label id="selectedFriendName" layoutX="82.0" layoutY="17.0" prefHeight="15.0" prefWidth="193.0" /><Button id="settingsButton" layoutX="538.0" layoutY="12.0" mnemonicParsing="false" text="Settings" />
+</children></AnchorPane>
+    <AnchorPane id="messagePane" minHeight="100.0" minWidth="100.0" prefHeight="100.0" prefWidth="160.0">
+<children><GridPane id="gridForInterface" prefHeight="219.0" prefWidth="622.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="202.0" minWidth="0.0" prefWidth="64.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="534.0" minWidth="10.0" prefWidth="489.0" />
+<ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="60.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="126.0" minHeight="10.0" prefHeight="126.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+<children><TextArea id="enterMessageField" layoutX="78.0" layoutY="14.0" prefHeight="165.0" prefWidth="479.0" GridPane.columnIndex="1" GridPane.rowIndex="1" /><HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+<children><Button id="sendButton" layoutX="439.0" layoutY="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Send" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+</children></HBox>
+</children></VBox>
+</children>
+</GridPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children></AnchorPane>

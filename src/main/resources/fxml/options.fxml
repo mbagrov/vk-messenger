@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" scaleShape="false" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children><TabPane layoutX="14.0" layoutY="43.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <tabs>
+    <Tab text="Encrypting">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+<children><RadioButton id="noEncryptingRadioButton" layoutX="16.0" layoutY="19.0" mnemonicParsing="false" text="No encrypting" /><RadioButton id="gammingEncryptingRadioButton" layoutX="16.0" layoutY="45.0" mnemonicParsing="false" text="Gamming method" /><TextField id="encryptKeyField" editable="false" layoutX="105.0" layoutY="86.0" prefHeight="25.0" prefWidth="100.0" /><Label layoutX="16.0" layoutY="91.0" text="Encrypt key" /><Label layoutX="16.0" layoutY="124.0" text="Decrypt key" /><TextField id="decryptKeyField" editable="false" layoutX="105.0" layoutY="119.0" prefHeight="25.0" prefWidth="102.0" /><Button id="saveOptionsButton" layoutX="524.2275390625" layoutY="328.0" mnemonicParsing="false" text="Save" />
+</children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
+</children></AnchorPane>
